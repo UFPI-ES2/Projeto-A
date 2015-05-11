@@ -12,14 +12,17 @@
 <title>Dashboard Template for Bootstrap</title>
 
 <!-- Bootstrap core CSS -->
-<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://getbootstrap.com/dist/css/bootstrap.min.css"
+	rel="stylesheet">
 
 <!-- Custom styles for this template -->
-<link href="http://getbootstrap.com/examples/dashboard/dashboard.css" rel="stylesheet">
+<link href="http://getbootstrap.com/examples/dashboard/dashboard.css"
+	rel="stylesheet">
 
 <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-<script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+<script
+	src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -62,19 +65,19 @@
 				<ul class="nav nav-sidebar">
 					{% for obj in objs %}
 					{% if obj == current %}
-					<li class='active'><a href="{% url 'cat' obj.name %}">{{ obj }}</a></li>
+					<li class='active'><a href="{% url 'dashsection' obj.path %}">{{obj }}</a></li>
 					{% else %}
-					<li><a href="{% url 'cat' obj.name %}">{{ obj }}</a></li>
+					<li><a href="{% url 'dashsection' obj.path %}">{{ obj }}</a></li>
 					{% endif %}
 					{% endfor %}
-					<li class="active"><a href="#">Overview <span
-							class="sr-only">(current)</span></a></li>
+					<li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
 				</ul>
-				
 			</div>
-			{% block contentssss %}
-			
-			{% endblock %}
+			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+				{% block dash_content %}
+				
+				{% endblock dash_content %}
+			</div>
 		</div>
 	</div>
 
@@ -87,6 +90,7 @@
 	<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
 	<script src="http://getbootstrap.com/assets/js/vendor/holder.js"></script>
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	<script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+	<script
+		src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>

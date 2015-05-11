@@ -2,9 +2,9 @@ from django.contrib import admin
 from .models import Section
 # Register your models here.
 class SectionAdmin(admin.ModelAdmin):
-    list_display = ('name','page')
+    list_display = ('name','path','page')
     fieldsets = [
-                 ('Section Name',{'fields': ['name','page']}),
+                 ('Section Name',{'fields': ['name','path','page']}),
                  ]
 #     class Meta:
 #         model = Section

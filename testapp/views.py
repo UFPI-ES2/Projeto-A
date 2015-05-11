@@ -18,8 +18,8 @@ def dashboard(request):
     template = 'home.html'
     return render_to_response(template, context)
 
-def page(request, name):
-    obj = Section.objects.get(name=name)
+def page(request, path):
+    obj = Section.objects.get(path=path)
     context = {'title': 'Projeto A - Engenharia de Software 2',
                 'objs' : Section.objects.all(),
                 'current': obj,

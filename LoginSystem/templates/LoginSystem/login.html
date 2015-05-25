@@ -1,0 +1,35 @@
+{% extends 'Base.html' %}
+{% block title %} Login {% endblock %}
+{% block css %}
+<style>
+form {
+	width: 15em;
+	margin: 0 auto;
+	display: block
+}
+
+form input,
+form label {
+	display: block;
+	width: 100%;
+	margin: 0;
+}
+div {
+	margin:0.5em 0;
+}
+</style>
+{% endblock %}
+{% block body %}
+<form method="post">
+{% if form.user.errors or form.password.errors %}
+	<div id='message_error'>Usu&aacute;rio e/ou senha devem estar preenchido</div>
+{% endif %}
+	{% csrf_token %}
+{% for field in form %}
+	<div>{{ field.label_tag }}</div>
+	<div>{{ field }}</div>
+{% endfor %}
+	<input type="submit" text="Login">
+	{{ cleaned_data }}
+</form>
+{% endblock %}

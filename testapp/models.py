@@ -4,6 +4,7 @@ from django.db import models
 class Section(models.Model):
     name = models.CharField(max_length=120, null=False, blank=True)
     page = models.CharField(max_length=120, null=False, blank=True)
+    app = models.CharField(max_length=120, null=False, blank=True)
     path = models.CharField(max_length=120, null=False, blank=True)
     
     def __str__(self):

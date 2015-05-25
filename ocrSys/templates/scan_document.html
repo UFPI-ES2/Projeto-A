@@ -1,4 +1,18 @@
-{% extends 'dashboard_base.html' %}
+{#% extends 'dashboard_base.html' %#}
 {% block dash_content %}
-<h1>SUSSESSO</h1>
-{% endblock %}
+<h1>SOME TEST</h1>
+<div>
+	<!-- UPLOAD IMAGE FORM -->
+	<form action="." method="post" enctype="multipart/form-data">
+	{% csrf_token %}
+	{{ form }}
+	<input type="submit" value="Submit" />
+	</form>
+</div>
+
+<div>
+{{ ocr_data}}
+</div>
+
+
+{% endblock dash_content %}

@@ -13,7 +13,10 @@ control = LoginControl(LoginModel())
 
 # Create your views here.
 def login(request):
+    print("hher")
     form = LoginData()
+    print(form)
+    print(render_to_response('LoginSystem/login.html', context={"form": form}))
     return render_to_response('LoginSystem/login.html', context={"form": form})
 
 

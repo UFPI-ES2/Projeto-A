@@ -1,24 +1,10 @@
-{% extends 'Base.html' %}
-{% block title %} Login {% endblock %}
+{% extends 'LoginSystem\Base.html' %}{% load staticfiles %}
+{% include "base.html" %}
+{% block title %} Login {% endblock title %}
 {% block css %}
-<style>
-form {
-	width: 15em;
-	margin: 0 auto;
-	display: block
-}
+<link href="{% static 'style.css' %}" type="text/css" rel="stylesheet" />
+{% endblock css %}
 
-form input,
-form label {
-	display: block;
-	width: 100%;
-	margin: 0;
-}
-div {
-	margin:0.5em 0;
-}
-</style>
-{% endblock %}
 {% block body %}
 <form method="post">
 {% if form.user.errors or form.password.errors %}
@@ -30,6 +16,5 @@ div {
 	<div>{{ field }}</div>
 {% endfor %}
 	<input type="submit" text="Login">
-	{{ cleaned_data }}
 </form>
-{% endblock %}
+{% endblock body %}

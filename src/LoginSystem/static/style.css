@@ -1,0 +1,17 @@
+@CHARSET "ISO-8859-1";
+
+form {
+	width: 15em;
+	margin: 0 auto;
+	display: block
+}
+
+form input,
+form label {
+	display: block;
+	width: 100%;
+	margin: 0;
+}
+div {
+	margin:0.5em 0;
+}

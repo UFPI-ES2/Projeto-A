@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^dash/', include('testapp.urls')),
-    url(r'^', include('LoginSystem.urls')),
+    url(r'^', include('daem.auth.urls')),
+#     url(r'^ocr/', include('ocrSys.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]

@@ -3,8 +3,9 @@ Created on 10/05/2015
 
 @author: Anderson
 '''
-from br.ufpi.es2.daem.models import User
 from django.core.exceptions import ObjectDoesNotExist
+
+from daem.auth.models import User
 
 
 class LoginModel(object):

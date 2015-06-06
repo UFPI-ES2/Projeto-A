@@ -7,5 +7,6 @@ from django.apps.config import AppConfig
 
 
 class DAEM(AppConfig):
-    name = "br.ufpi.es2.daem"
-    verbose_name = "DAEM"
+    name = "daem.auth"
+    label = "daem_auth"
+    verbose_name = "DAEM Auth"

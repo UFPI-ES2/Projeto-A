@@ -1,6 +1,6 @@
-requerimentos:
-	eclipse + pydev
-	python 3.4 + pyocr + django
+- Requisitos necessários:
+	Eclipse + Plugin PyDev + EGit
+	Python 3.4 + Django + PyOcr
 clonar o repositório (sem importar projeto)
 clicar com o botão direito em cima do repositorio clonado
 selecionar import projects

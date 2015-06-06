@@ -40,8 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'testapp',
     'ocrSys',
-    'br.ufpi.es2.daem',
-    'LoginSystem',
+    'daem.auth',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -53,7 +52,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
-    'br.ufpi.es2.daem.middleware.LoginMiddleware',
+    'daem.auth.middleware.LoginMiddleware',
 )
 
 ROOT_URLCONF = 'es2_aproject.urls'

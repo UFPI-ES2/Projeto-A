@@ -1,10 +1,9 @@
-{% extends 'LoginSystem\Base.html' %}{% load staticfiles %}
-{% include "base.html" %}
-{% block title %} Login {% endblock title %}
+{% extends 'daem.auth\base.html' %}{% load static %}
+{% block title %} Login {% endblock %}
 {% block css %}
-<link href="{% static 'style.css' %}" type="text/css" rel="stylesheet" />
-{% endblock css %}
-
+{{ block.super}}
+<link href="{% static 'daem.auth/style.css' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
 {% block body %}
 <form method="post">
 {% if form.user.errors or form.password.errors %}
@@ -16,5 +15,6 @@
 	<div>{{ field }}</div>
 {% endfor %}
 	<input type="submit" text="Login">
+	{{ cleaned_data }}
 </form>
-{% endblock body %}
+{% endblock %}

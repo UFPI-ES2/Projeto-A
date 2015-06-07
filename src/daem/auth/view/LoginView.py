@@ -22,6 +22,7 @@ class LoginView(FormView):
     def post(self, request, *args, **kwargs):
         form_class = self.get_form_class()
         form = self.get_form(form_class)
+        code = 0
         if form.is_valid():
             lg = self.control.login(form.cleaned_data["user"],
                                     form.cleaned_data["password"])
@@ -30,4 +31,12 @@ class LoginView(FormView):
                     request.GET.get("redirect_to", '/dash/')
 
                 return self.form_valid(form)
+            else:
+                code = code | 4
+        else:
+            if form["user"].errors:
+                code = code | 1
+            if form["password"].errors:
+                code = code | 2
+        form.error_code = code
         return self.form_invalid(form)

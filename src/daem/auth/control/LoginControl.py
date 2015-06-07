@@ -21,13 +21,16 @@ class LoginControl(object):
 #             raise Exception("Sessão Inválida")
 
     def login(self, user, password):
+        """
+        @return True se login foi bem sucedido, caso contrário, False
+        """
         session = LoginControl.session
         self.current_user = self.model.get(user, password)
 
         if session and self.current_user:
             session[LoginControl.SESSION_NAME] = self.current_user.user
 
-        return self.current_user is not None
+        return (self.current_user is not None)
 
     def logout(self):
         session = LoginControl.session

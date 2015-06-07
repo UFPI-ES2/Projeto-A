@@ -3,11 +3,17 @@
 {% block css %}
 {{ block.super}}
 <link href="{% static 'daem.auth/style.css' %}" rel="stylesheet" type="text/css" />
-{% endblock %}
+{% endblock css %}
 {% block body %}
 <form method="post">
-{% if form.user.errors or form.password.errors %}
-	<div id='message_error'>Usu&aacute;rio e/ou senha devem estar preenchido</div>
+{% if form.error_code == 1 %}
+	<div id='message_error'>O campo usu&aacute;rio deve ser preenchido</div>
+{% elif form.error_code == 2 %}
+	<div id='message_error'>O campo senha deve ser preenchido</div>
+{% elif form.error_code == 3 %}
+	<div id='message_error'>Os campos usu&aacute;rio e senha devem ser preenchidos</div>
+{% elif form.error_code == 4 %}
+	<div id='message_error'>Usu&aacute;rio inexistente ou senha inv&aacute;lida</div>
 {% endif %}
 	{% csrf_token %}
 {% for field in form %}
@@ -15,6 +21,5 @@
 	<div>{{ field }}</div>
 {% endfor %}
 	<input type="submit" text="Login">
-	{{ cleaned_data }}
 </form>
-{% endblock %}
+{% endblock body %}

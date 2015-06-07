@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from django.http.response import HttpResponseRedirect
 
 from daem.auth.control.LoginControl import LoginControl
@@ -9,6 +10,9 @@ control = LoginControl(LoginModel())
 
 
 def logout(request):
+    """
+    função responsável por fazer logout
+    """
     control.logout()
     return HttpResponseRedirect('/login/')
 

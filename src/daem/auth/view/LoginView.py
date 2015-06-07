@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 '''
 Created on 11/05/2015
 
@@ -11,6 +12,11 @@ from daem.auth.model.LoginModel import LoginModel
 
 
 class LoginView(FormView):
+    """
+    Classe responsável por exibir a tela de login ao usuário, fazendo a
+    validação do formulário, e estabelecer a sessão caso o usuário seja
+    válido. 
+    """
     context_object_name = "context"
     form_class = LoginData
     success_url = '.'

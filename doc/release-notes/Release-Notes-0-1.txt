@@ -4,55 +4,55 @@
 
 NOTAS ESPECIAIS
 ------------------------------------------------------------------------------------------------------------------------------------------
-# Esta sessão indica que informações contém na release da aplição liberada. Descrição bem objetiva e simples.
-# Este documento contém as informações relativas à versão teste da aplicação ControlePessoal.
+# Esta sessÃ£o indica que informaÃ§Ãµes contÃ©m na release da apliÃ§Ã£o liberada. DescriÃ§Ã£o bem objetiva e simples.
+# Este documento contÃ©m as informaÃ§Ãµes relativas Ã  versÃ£o teste da aplicaÃ§Ã£o ControlePessoal.
 
 
 COMPONENTES DA RELEASE
-# Esta sessão contém os componentes que estão integrados à release
+# Esta sessÃ£o contÃ©m os componentes que estÃ£o integrados Ã  release
 ------------------------------------------------------------------------------------------------------------------------------------------
 Lista de funcionalidade da release:
-Autenticação de Usuário
+AutenticaÃ§Ã£o de UsuÃ¡rio
 - Login
 - Logout
 API de OCR
 - Reconhecimento de Texto a partir de uma Imagem
 
 ARTEFATOS GERADOS
-# Esta sessão contem uma lista de documentos, arquivos e chaves do projeto
+# Esta sessÃ£o contem uma lista de documentos, arquivos e chaves do projeto
 ------------------------------------------------------------------------------------------------------------------------------------------
 - Diagrama de Classes/Pacotes
-- Documentação
+- DocumentaÃ§Ã£o
 
 Todos podem ser acessados a partir de 
-# TODO endereço do repositório
+# TODO endereÃ§o do repositÃ³rio
 
 
 PROCEDIMENTOS PARA BAIXAR O PROJETO
-# Esta sessão mostra os passos para baixar o projeto na IDE Eclipse
+# Esta sessÃ£o mostra os passos para baixar o projeto na IDE Eclipse
 ------------------------------------------------------------------------------------------------------------------------------------------
 Vide "how to setup environment.txt"
 
-PROCEDIMENTO PARA EXECUTAR A APLICAÇÃO USANDO A IDE
-# Esta sessão mostrar os passos para executar a aplicação a partir do projeto eclipse 
+PROCEDIMENTO PARA EXECUTAR A APLICAÃ‡ÃƒO USANDO A IDE
+# Esta sessÃ£o mostrar os passos para executar a aplicaÃ§Ã£o a partir do projeto eclipse 
 ------------------------------------------------------------------------------------------------------------------------------------------
 1. Selecione o Projeto
-2. Clique com o botão direito sobre a Classe selecionada e escolha a opção "Run As -> PyDEv: Django"
-3. A aplicação deverá exibir o 'status' do servidor
+2. Clique com o botÃ£o direito sobre a Classe selecionada e escolha a opÃ§Ã£o "Run As -> PyDEv: Django"
+3. A aplicaÃ§Ã£o deverÃ¡ exibir o 'status' do servidor
 4. Abra um navegador web
 5. digite o seguinte URL 'http://127.0.0.1:8000/' e pressione enter.
 
 PROCEDIMENTOS PARA GERAR A BUILD DA RELEASE
-# Esta sessão mostra os passos para gerar a build e testar a aplicação
+# Esta sessÃ£o mostra os passos para gerar a build e testar a aplicaÃ§Ã£o
 ------------------------------------------------------------------------------------------------------------------------------------------
-Não aplicado para esta versão, por se tratar de uma apricação interpretada.
+NÃ£o aplicado para esta versÃ£o, por se tratar de uma apricaÃ§Ã£o interpretada.
 
 PROCEDIMENTOS PARA GERAR O JAVADOCS
 # falta
-# Esta sessão mostra os passos para gerar o javadoc dos comentários do código do projeto
+# Esta sessÃ£o mostra os passos para gerar o javadoc dos comentÃ¡rios do cÃ³digo do projeto
 ------------------------------------------------------------------------------------------------------------------------------------------
-1. Vá no menu Principal do Eclipse em "Menu -> Preferences -> Java -> Installed JREs" e configura a compilação para seu JDK local
-2. Clique com o botão direito sobre o Projeto
+1. VÃ¡ no menu Principal do Eclipse em "Menu -> Preferences -> Java -> Installed JREs" e configura a compilaÃ§Ã£o para seu JDK local
+2. Clique com o botÃ£o direito sobre o Projeto
 3. Selecione o menu Export
 4. Selecione o wizard Java -> Javadoc
 5. Selecione o destino dos arquivos html que o javadoc vai gerar

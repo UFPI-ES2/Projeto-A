@@ -1,0 +1,61 @@
+==========================================================================================================================================
+[DAEM] Release Notes - 13/05/2015 - REV 0.1
+==========================================================================================================================================
+
+NOTAS ESPECIAIS
+------------------------------------------------------------------------------------------------------------------------------------------
+# Esta sessão indica que informações contém na release da aplição liberada. Descrição bem objetiva e simples.
+# Este documento contém as informações relativas à versão teste da aplicação ControlePessoal.
+
+
+COMPONENTES DA RELEASE
+# Esta sessão contém os componentes que estão integrados à release
+------------------------------------------------------------------------------------------------------------------------------------------
+Lista de funcionalidade da release:
+Autenticação de Usuário
+- Login
+- Logout
+API de OCR
+- Reconhecimento de Texto a partir de uma Imagem
+
+ARTEFATOS GERADOS
+# Esta sessão contem uma lista de documentos, arquivos e chaves do projeto
+------------------------------------------------------------------------------------------------------------------------------------------
+- Diagrama de Classes/Pacotes
+- Documentação
+
+Todos podem ser acessados a partir de 
+# TODO endereço do repositório
+
+
+PROCEDIMENTOS PARA BAIXAR O PROJETO
+# Esta sessão mostra os passos para baixar o projeto na IDE Eclipse
+------------------------------------------------------------------------------------------------------------------------------------------
+Vide "how to setup environment.txt"
+
+PROCEDIMENTO PARA EXECUTAR A APLICAÇÃO USANDO A IDE
+# Esta sessão mostrar os passos para executar a aplicação a partir do projeto eclipse 
+------------------------------------------------------------------------------------------------------------------------------------------
+1. Selecione o Projeto
+2. Clique com o botão direito sobre a Classe selecionada e escolha a opção "Run As -> PyDEv: Django"
+3. A aplicação deverá exibir o 'status' do servidor
+4. Abra um navegador web
+5. digite o seguinte URL 'http://127.0.0.1:8000/' e pressione enter.
+
+PROCEDIMENTOS PARA GERAR A BUILD DA RELEASE
+# Esta sessão mostra os passos para gerar a build e testar a aplicação
+------------------------------------------------------------------------------------------------------------------------------------------
+Não aplicado para esta versão, por se tratar de uma apricação interpretada.
+
+PROCEDIMENTOS PARA GERAR O JAVADOCS
+# falta
+# Esta sessão mostra os passos para gerar o javadoc dos comentários do código do projeto
+------------------------------------------------------------------------------------------------------------------------------------------
+1. Vá no menu Principal do Eclipse em "Menu -> Preferences -> Java -> Installed JREs" e configura a compilação para seu JDK local
+2. Clique com o botão direito sobre o Projeto
+3. Selecione o menu Export
+4. Selecione o wizard Java -> Javadoc
+5. Selecione o destino dos arquivos html que o javadoc vai gerar
+
+[DAEM] Release Notes - 13/05/2015 - REV 0.1
+==========================================================================================================================================

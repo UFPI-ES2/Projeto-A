@@ -1,0 +1,56 @@
+﻿==========================================================================================================================================
+[DAEM] Release Notes - 08/06/2015 - REV 0.2
+==========================================================================================================================================
+
+NOTAS ESPECIAIS
+------------------------------------------------------------------------------------------------------------------------------------------
+Release da segunda iteração do Projeto A - Gestão de Digitalização de Documentos usando OCR.
+Melhorado estrutura do projeto, correção de bugs e melhoramento do sistema de Login. 
+
+COMPONENTES DA RELEASE
+# Esta sessão contém os componentes que estão integrados à release
+------------------------------------------------------------------------------------------------------------------------------------------
+Lista de funcionalidade da release:
+Autenticação de Usuário
+- Login
+- Logout
+API de OCR
+- Reconhecimento de Texto a partir de uma Imagem
+Gerenciador de Documentos
+- Inserir Documento
+- Listar Documentos
+- Vizualizar Documentos
+
+ARTEFATOS GERADOS
+------------------------------------------------------------------------------------------------------------------------------------------
+- Diagrama de Classes/Pacotes
+- Diagrama de Casos de Uso Textuais
+- Fluxos de Casos de Uso
+- Diagrama de Sequencia
+- Plano de Liberações
+- Documentação
+
+Todos podem ser acessados a partir de: https://github.com/UFPI-ES2/Projeto-A/tree/master/doc
+
+PROCEDIMENTOS PARA BAIXAR O PROJETO
+------------------------------------------------------------------------------------------------------------------------------------------
+Os procedimentos para download do instalação do projeto encontram-se em: https://github.com/UFPI-ES2/Projeto-A/tree/master/doc/readme.txt
+
+PROCEDIMENTO PARA EXECUTAR A APLICAÇÃO USANDO A IDE
+------------------------------------------------------------------------------------------------------------------------------------------
+1. Selecione o Projeto
+2. Clique com o botão direito sobre a Classe selecionada e escolha a opção "Run As -> PyDEv: Django"
+3. A aplicação deverá exibir o 'status' do servidor
+4. Abra um navegador web
+5. digite o seguinte URL 'http://127.0.0.1:8000/' e pressione enter.
+
+PROCEDIMENTOS PARA GERAR A BUILD DA RELEASE
+------------------------------------------------------------------------------------------------------------------------------------------
+Não aplicado para esta versão, por se tratar de uma aplicação interpretada.
+
+PROCEDIMENTOS PARA GERAR DOCUMENTAÇÃO
+------------------------------------------------------------------------------------------------------------------------------------------
+Os procedimentos para gerar documentação encontram-se em: https://github.com/UFPI-ES2/Projeto-A/tree/master/doc/
+
+[DAEM] Release Notes - 08/06/2015 - REV 0.2
+==========================================================================================================================================

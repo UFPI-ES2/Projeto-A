@@ -38,9 +38,12 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'widget_tweaks',
     'testapp',
     'ocrSys',
     'daem.auth',
+    'daem.doc',
+    'daem.template',
 )
 
 MIDDLEWARE_CLASSES = (

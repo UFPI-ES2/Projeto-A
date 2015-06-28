@@ -11,6 +11,6 @@ urlpatterns = [
     url(r"^$", views.index, name="index"),
     url(r"^logout/$", views.logout, name='logout'),
     url(r"^login/$",
-        LoginView.as_view(template_name='daem.auth/login.html'),
+        LoginView.as_view(template_name='pages/login.html'),
         name='login'),
 ]

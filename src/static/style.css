@@ -1,0 +1,50 @@
+
+	html, body {
+		height: 100%;
+	}
+	#daem-body {
+		min-height: 100%;
+		position: relative;
+	}
+	#daem-content {
+		padding-bottom: 40px;
+	}
+	#daem-header {
+		
+	}
+	#daem-footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%
+	}
+
+#footer {
+	color: #444;
+	background-color: #EEE;
+	border-top: 1px solid #CCC;
+	padding: 1em 0;
+}
+
+#copyright {
+	color: #DDD;
+	background-color: #222;
+}
+
+ul.nav.nav-sidebar>li {
+	border-bottom: 1px solid #0cc;
+}
+
+ul.nav.nav-sidebar>li:last-child {
+	border-bottom: none;
+}
+
+.signin {
+  max-width: 24em;
+  margin: 1em auto;
+  padding: 1em;
+}
+
+.form-data {
+	border-radius: 0;
+	margin-bottom: 1em;
+}

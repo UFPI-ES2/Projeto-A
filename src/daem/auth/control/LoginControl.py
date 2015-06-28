@@ -10,7 +10,7 @@ from daem.auth.models import User
 
 class LoginControl(object):
     """
-    classe responsável por o controle dos dados. 
+    classe responsável por o controle dos dados.
     """
     session = None
     SESSION_NAME = "daem.auth.user"
@@ -19,9 +19,6 @@ class LoginControl(object):
         """ model é o modelo!"""
         self.model = model
         self.current_user = None
-
-#         if LoginControl.session is None:
-#             raise Exception("Sessão Inválida")
 
     def login(self, user, password):
         """

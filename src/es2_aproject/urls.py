@@ -19,6 +19,7 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^dash/', include('testapp.urls')),
     url(r'^', include('daem.auth.urls')),
+    url(r'^', include('daem.doc.urls')),
 #     url(r'^ocr/', include('ocrSys.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]

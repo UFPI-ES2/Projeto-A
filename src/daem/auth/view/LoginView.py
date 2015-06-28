@@ -15,11 +15,11 @@ class LoginView(FormView):
     """
     Classe responsável por exibir a tela de login ao usuário, fazendo a
     validação do formulário, e estabelecer a sessão caso o usuário seja
-    válido. 
+    válido.
     """
     context_object_name = "context"
     form_class = LoginData
-    success_url = '.'
+    success_url = '/'
 
     def __init__(self, **kwargs):
         FormView.__init__(self, **kwargs)

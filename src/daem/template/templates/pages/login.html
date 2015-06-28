@@ -1,0 +1,24 @@
+{% extends 'daem-body-c.html' %}{% load static %}{% load widget_tweaks %}
+{% block title %} Login {% endblock %}
+{% block css %}
+<link href="{% static 'daem.auth/style.css' %}" rel="stylesheet" type="text/css" />
+{% endblock css %}
+{% block center %}
+            <form method="post" class="signin">
+            {% if form.error_code == 1 %}
+              <div id='message_error'>O campo usu&aacute;rio deve ser preenchido</div>
+            {% elif form.error_code == 2 %}
+              <div id='message_error'>O campo senha deve ser preenchido</div>
+            {% elif form.error_code == 3 %}
+              <div id='message_error'>Os campos usu&aacute;rio e senha devem ser preenchidos</div>
+            {% elif form.error_code == 4 %}
+              <div id='message_error'>Usu&aacute;rio inexistente ou senha inv&aacute;lida</div>
+            {% endif %}
+              {% csrf_token %}
+            {% for field in form %}
+              <label for="{{field.id_for_label}}" class="sr-only">{{ field.label }}</label>
+              {% render_field field class+="form-control form-data" placeholder=field.label %}
+            {% endfor %}
+              <input type="submit" value="Entrar" class="btn btn-primary btn-block form-data">
+            </form>
+{% endblock center %}

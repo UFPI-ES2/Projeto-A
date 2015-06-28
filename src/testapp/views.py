@@ -9,7 +9,7 @@ context = {'title': 'Projeto A - Engenharia de Software 2',
                }
 
 def index(request):
-    template = 'dashboard_base.html'
+    template = 'pages/dashboard.html'
     return render(request, template, context)
   
 # def dashboard(request):

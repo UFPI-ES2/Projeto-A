@@ -1,22 +1,26 @@
+html, body {
+	height: 100%;
+}
 
-	html, body {
-		height: 100%;
-	}
-	#daem-body {
-		min-height: 100%;
-		position: relative;
-	}
-	#daem-content {
-		padding-bottom: 40px;
-	}
-	#daem-header {
-		
-	}
-	#daem-footer {
-		position: absolute;
-		bottom: 0;
-		width: 100%
-	}
+#daem-body {
+	min-height: 100%;
+	position: relative;
+}
+
+#daem-content {
+	padding-top: 70px;
+	padding-bottom: 40px;
+}
+
+#daem-header {
+	
+}
+
+#daem-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%
+}
 
 #footer {
 	color: #444;
@@ -39,9 +43,9 @@ ul.nav.nav-sidebar>li:last-child {
 }
 
 .signin {
-  max-width: 24em;
-  margin: 1em auto;
-  padding: 1em;
+	max-width: 24em;
+	margin: 1em auto;
+	padding: 1em;
 }
 
 .form-data {

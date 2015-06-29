@@ -6,7 +6,7 @@ Created on 25/06/2015
 from django.views.generic.edit import FormView
 from django import forms
 from django.core.urlresolvers import reverse
-from daem.doc.view.FileControl import FileControl
+from daem.doc.control.FileControl import FileControl
 
 
 class CreateDocumentView(FormView):

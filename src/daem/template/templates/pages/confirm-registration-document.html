@@ -1,12 +1,22 @@
-{% extends "pages/dashboard.html"%}{% load widget_tweaks %}
-{% block title %} Cadastrar Documento {% endblock %}
-{% block center %}
-          <form method="post">
-            {% csrf_token %}
-            {% for field in form %}
-              <label for="{{field.id_for_label}}" class="sr-only">{{ field.label }}</label>
-              {% render_field field class+="form-control form-data" placeholder=field.label %}
-            {% endfor %}
-              <input type="submit" value="Cadastrar" class="btn btn-primary btn-block form-data">
-            </form>
-{% endblock center %}
+{% extends "pages/dashboard.html"%}{% load widget_tweaks %}{% block title %}
+Cadastrar Documento {% endblock %} {% block center %}
+<form method="post" class="form-horizontal" role="form">
+  {% csrf_token %}
+  {% for field in form %}
+  <div class="form-group">
+    <label for="{{field.id_for_label}}" class="control-label col-md-2">{{ field.label }}:</label>
+    <div class="col-md-10">{% render_field field class+="form-control form-data" %}</div>
+  </div>
+  {% endfor %}
+  <div class="form-group">
+    <div class="col-md-offset-2 col-md-5">
+      <input type="submit" value="Cadastrar"
+        class="btn btn-primary btn-block form-data">
+    </div>
+    <div class="col-md-5">
+      <a href="/" class="btn btn-danger btn-block form-data">Cancelar</a>
+    </div>
+  </div>
+</form>
+<img src="data:image/{{ img.format.lower }};base64,{{ img.data }}" class="image" />
+{% endblock center %}f

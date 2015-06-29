@@ -6,7 +6,7 @@ Created on 27/06/2015
 import time
 from es2_aproject.settings import BASE_DIR
 import os
-from PIL.Image import Image
+from PIL import Image
 
 
 class FileControl:

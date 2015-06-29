@@ -1,0 +1,19 @@
+{% extends "pages/dashboard.html"%}{% load widget_tweaks %}
+{% block title %} Cadastrar Documento {% endblock %}
+{% block center %}
+            <h1>Lista de Documentos</h1>
+            <table class="table table-hover">
+			    <tr>
+			    	<th>Titulo</th>
+			    	<th>Disciplina</th>
+			    	<th>Professor</th>
+			    </tr>
+			  {% for doc in documentList %}
+			    <tr>
+			      <td>{{doc.title}}</td>
+			      <td>{{doc.discipline}}</td>
+			      <td>{{doc.professor}}</td>
+			    </tr>
+			  {% endfor %}
+			</table>
+{% endblock center %}

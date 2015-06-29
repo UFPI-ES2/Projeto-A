@@ -2,7 +2,6 @@ from django.shortcuts import render, render_to_response
 from django.views.generic.edit import FormView
 from .forms import UploadImageToOCR
 from .controllers.OCR import OCR
-from .models import Document
 # class OCRFormView(FormView):
 #     context_object_name = "context"
 #     form_class = UploadImageToOCR
